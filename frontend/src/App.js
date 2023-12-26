@@ -7,7 +7,7 @@ import './index.css';
 import ScrollToTop from './components/ScrollToTop.jsx';
 import Header from './components/shared/Header.jsx'
 import Footer from './components/shared/Footer.jsx'
-// import useScrollToTheTop from './hooks/useScrollToTheTop.jsx';
+import useScrollToTop from './hooks/useScrollToTop.jsx';
 
 const AboutMe = lazy(() => import('./pages/AboutMe.jsx'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
@@ -40,7 +40,7 @@ function App() {
                             <Footer />
                         </Router>
                         
-                        {/* <UseScrollToTheTop /> */}
+                        <useScrollToTop />
                     </div>
                 </div>
             </AnimatePresence>
